@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/apatial/.android/build-cache/bf720451bea7264cca5e6ed3aa890457888189af/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/Users/apatial/Desktop/ShoppingList/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_fcb15599803ddbffa7b34052048e0459ea67a802/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/apatial/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.8.2/3edcfe49d2c6053a70a2a47e4e1c2f94998a49cf/gson-2.8.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3edcfe49d2c6053a70a2a47e4e1c2f94998a49cf">
+        <dex dex="/Users/apatial/Desktop/ShoppingList/app/build/intermediates/transforms/dex/debug/folders/1000/10/gson-2.8.2_26a042228a3f16af5bfcdf332f71f9726040b56d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/apatial/.android/build-cache/2c2d3bbfec1e9e07e2288cf1f52863ca70a1e603/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/Users/apatial/Desktop/ShoppingList/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_ce4b225415dad6fbb8ae1a9599a681163f426515/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/apatial/.android/build-cache/37276dc9f6551cd5b5c8cfcb232a616f20f4b57c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/Users/apatial/Desktop/ShoppingList/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_50e600acd8e0020048e84714c78c4bdc5174caee/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/apatial/.android/build-cache/98a1b7837cf1b92c8bc994831ea44715a70b2cea/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/apatial/Desktop/ShoppingList/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_1a045ea751ae6027e987543e28022722cc89544a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/apatial/.android/build-cache/4499941c41fbd10367716c04b4defe2bc672e7e3/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/Users/apatial/Desktop/ShoppingList/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_af304c5d432b271e06c7a977506c30b4c8b25e1d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/apatial/Desktop/ShoppingList/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/apatial/Desktop/ShoppingList/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_bfc417d45872bd0b60aff3b1cb8bc67cf3f46eb6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/apatial/Desktop/ShoppingList/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="9c2f6d62c718fdb3db4b9983c4f0bc391eae0a11">
+        <dex dex="/Users/apatial/Desktop/ShoppingList/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_65e82e96604f14015bf9717e5c38904791549853/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/apatial/.android/build-cache/004573a81575cfd06ec8f869fcc6585f657d7ffc/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/Users/apatial/Desktop/ShoppingList/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_38f5155a9a20834c00a9b8c8b43d6cc1de06a6d3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/apatial/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/Users/apatial/Desktop/ShoppingList/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.2_85a1d886136030d407f9238e9d3da3a6c4e184fc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/apatial/.android/build-cache/42ce2fbcb97fe4fc49c94c4f545cc971e6dc2aca/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="95519720620b553f63afc789beba9ad582807f7c">
+        <dex dex="/Users/apatial/Desktop/ShoppingList/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_547d8d22289d87e2a609e3d2f960a5eb5263dedf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/apatial/.android/build-cache/da204f2ce937439219120f6b0d94678c7873c75b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d4cf6227dd6a2ceff0f7dcf0c324380b7abf2c28">
+        <dex dex="/Users/apatial/Desktop/ShoppingList/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_b60533c3bec07d700eedd4815cb80aea3189a43a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/apatial/.android/build-cache/7f9838ce63b0064b8b5981a6a091f1b69f647e73/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="38789e20ace9ab7dbd00554bd2673ab424478d3b">
+        <dex dex="/Users/apatial/Desktop/ShoppingList/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a40d32eb8a0c4a0ac71085af4e74cdb9243a680a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/apatial/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/Users/apatial/Desktop/ShoppingList/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.3.1_768e5878cefd5bd45c47ea2ffdb5d5472b429a9e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/apatial/.android/build-cache/608adf9654587e1280da55f748cc49799d24bd29/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
+        <dex dex="/Users/apatial/Desktop/ShoppingList/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_897c81cebf1fc40f5463bb8b3ae6c8d732a8ca4b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/apatial/.android/build-cache/772a4251376b2322a9e86b8a74ffaeaac6313750/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/Users/apatial/Desktop/ShoppingList/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4f453bc0fa67e6bd57ddd6955157bf984bf24fb9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/apatial/.android/build-cache/39344ae446c04afe37fe39667f4c9a248d82f194/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/Users/apatial/Desktop/ShoppingList/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_7a1092f492aecaf4d7aceedbade33d13bc55914a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/apatial/.android/build-cache/bceaa5aed7d4a2bee65b8c2a7f9b065692b73f80/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/Users/apatial/Desktop/ShoppingList/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_2c6ecf14125d7481fad8f5558e372a63f7e6dbe7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/apatial/.android/build-cache/815a30058c8bc377a1f4dd7b36d0140d0bd18844/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/Users/apatial/Desktop/ShoppingList/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_825425568d735ba5bc7a5083f2d24b74f3e335ec/classes.dex" />
+    </item>
+
+</items>

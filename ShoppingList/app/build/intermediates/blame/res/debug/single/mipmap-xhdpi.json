@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/apatial/Desktop/ShoppingList/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher_round.png",
+        "source": "/Users/apatial/Desktop/ShoppingList/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/apatial/Desktop/ShoppingList/D:\\ShoppingList\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_launcher_round.png",
+        "source": "/Users/apatial/Desktop/ShoppingList/D:\\ShoppingList\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/apatial/Desktop/ShoppingList/D:\\ShoppingList\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_launcher.png",
+        "source": "/Users/apatial/Desktop/ShoppingList/D:\\ShoppingList\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "/Users/apatial/Desktop/ShoppingList/app/build/intermediates/res/merged/debug/mipmap-xhdpi/ic_launcher.png",
+        "source": "/Users/apatial/Desktop/ShoppingList/app/src/main/res/mipmap-xhdpi/ic_launcher.png"
+    }
+]

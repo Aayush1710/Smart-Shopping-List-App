@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "/Users/apatial/Desktop/ShoppingList/app/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/apatial/.android/build-cache/39344ae446c04afe37fe39667f4c9a248d82f194/output/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/Users/apatial/Desktop/ShoppingList/D:\\ShoppingList\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
+        "source": "/Users/apatial/Desktop/ShoppingList/C:\\Users\\Prashant\\.android\\build-cache\\e8e7950aced5eedc53cda41b0034f8c7b486a4ae\\output\\res\\layout-v21\\notification_action.xml"
+    },
+    {
+        "merged": "/Users/apatial/Desktop/ShoppingList/app/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/Users/apatial/.android/build-cache/39344ae446c04afe37fe39667f4c9a248d82f194/output/res/layout-v21/notification_action.xml"
+    },
+    {
+        "merged": "/Users/apatial/Desktop/ShoppingList/app/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/apatial/.android/build-cache/39344ae446c04afe37fe39667f4c9a248d82f194/output/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/apatial/Desktop/ShoppingList/D:\\ShoppingList\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
+        "source": "/Users/apatial/Desktop/ShoppingList/C:\\Users\\Prashant\\.android\\build-cache\\e8e7950aced5eedc53cda41b0034f8c7b486a4ae\\output\\res\\layout-v21\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/apatial/Desktop/ShoppingList/D:\\ShoppingList\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
+        "source": "/Users/apatial/Desktop/ShoppingList/C:\\Users\\Prashant\\.android\\build-cache\\e8e7950aced5eedc53cda41b0034f8c7b486a4ae\\output\\res\\layout-v21\\notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/Users/apatial/Desktop/ShoppingList/app/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/apatial/.android/build-cache/39344ae446c04afe37fe39667f4c9a248d82f194/output/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/apatial/Desktop/ShoppingList/D:\\ShoppingList\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
+        "source": "/Users/apatial/Desktop/ShoppingList/C:\\Users\\Prashant\\.android\\build-cache\\e8e7950aced5eedc53cda41b0034f8c7b486a4ae\\output\\res\\layout-v21\\notification_template_icon_group.xml"
+    }
+]

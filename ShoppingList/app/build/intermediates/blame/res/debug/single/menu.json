@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "/Users/apatial/Desktop/ShoppingList/D:\\ShoppingList\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_tab_list.xml",
+        "source": "/Users/apatial/Desktop/ShoppingList/D:\\ShoppingList\\app\\src\\main\\res\\menu\\menu_tab_list.xml"
+    },
+    {
+        "merged": "/Users/apatial/Desktop/ShoppingList/D:\\ShoppingList\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_tabs_list.xml",
+        "source": "/Users/apatial/Desktop/ShoppingList/D:\\ShoppingList\\app\\src\\main\\res\\menu\\menu_tabs_list.xml"
+    },
+    {
+        "merged": "/Users/apatial/Desktop/ShoppingList/app/build/intermediates/res/merged/debug/menu/menu_tabs_list.xml",
+        "source": "/Users/apatial/Desktop/ShoppingList/app/src/main/res/menu/menu_tabs_list.xml"
+    },
+    {
+        "merged": "/Users/apatial/Desktop/ShoppingList/D:\\ShoppingList\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_list_page.xml",
+        "source": "/Users/apatial/Desktop/ShoppingList/D:\\ShoppingList\\app\\src\\main\\res\\menu\\menu_list_page.xml"
+    },
+    {
+        "merged": "/Users/apatial/Desktop/ShoppingList/app/build/intermediates/res/merged/debug/menu/menu_list_page.xml",
+        "source": "/Users/apatial/Desktop/ShoppingList/app/src/main/res/menu/menu_list_page.xml"
+    },
+    {
+        "merged": "/Users/apatial/Desktop/ShoppingList/app/build/intermediates/res/merged/debug/menu/menu_tab_list.xml",
+        "source": "/Users/apatial/Desktop/ShoppingList/app/src/main/res/menu/menu_tab_list.xml"
+    }
+]
