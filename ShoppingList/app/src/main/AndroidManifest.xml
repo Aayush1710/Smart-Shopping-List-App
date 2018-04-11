@@ -3,6 +3,8 @@
     package="com.prashant.shoppinglist">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -32,6 +34,34 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".SurveyActivity"
             android:screenOrientation="portrait" ></activity>
+
+        <activity
+            android:name=".DashboardActivity"
+            android:label="@string/title_activity_dashboard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".GoogleVisionAPI"
+            android:label="@string/title_activity_google_vision_api"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+
+        <meta-data
+            android:name="com.prashant.shoppinglist.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.prashant.shoppinglist.DEPENDENCIES"
+            android:value="ocr" />
+
     </application>
 
 </manifest>

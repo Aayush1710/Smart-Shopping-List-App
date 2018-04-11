@@ -1,25 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/apatial/Desktop/ShoppingList/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml",
-            "map": [
-                {
-                    "source": "/Users/apatial/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/75aaffe3764b623db413136fbc06c43f/res/values-port/values-port.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "55",
-                        "endOffsets": "106"
-                    }
-                }
-            ]
-        },
-        {
             "outputFile": "/Users/apatial/Desktop/Smart-Shopping-List-App/ShoppingList/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-port/values-port.xml",
             "map": [
                 {
-                    "source": "/Users/apatial/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/75aaffe3764b623db413136fbc06c43f/res/values-port/values-port.xml",
+                    "source": "/Users/apatial/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/73129a6a2bd2fb63e05e843d2ac3542c/res/values-port/values-port.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

@@ -1,0 +1,4 @@
+#Sun Apr 08 13:04:14 EDT 2018
+base.0=/Users/apatial/Desktop/Smart-Shopping-List-App/ShoppingList/app/build/intermediates/transforms/dexMerger/debug/0
+path.0=classes.dex
+renamed.0=classes.dex
