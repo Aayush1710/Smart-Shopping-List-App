@@ -285,6 +285,9 @@ public class UploadTab extends Fragment {
         Bundle b=getActivity().getIntent().getExtras();
         final ArrayList<String> list=new ArrayList<String>();
 
+        ///Remove and call OCR
+
+        //add values to list
 
         if(item1.getText()!=null && item1.getText().length()>0)
             list.add(item1.getText().toString());

@@ -128,7 +128,7 @@ public class DashboardActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_tab_list);
+        setContentView(R.layout.upload_list_fragment);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -486,7 +486,50 @@ public class DashboardActivity extends AppCompatActivity {
             return "Cloud Vision API request failed. Check logs for details.";
         }
 
+        protected void onPostExecute(final String result) {
+            //Save user inventory here with result.
+            String x = result;
+            HttpUtils.get("/api/ingredients", null, new JsonHttpResponseHandler() {
+                public void onSuccess(int statusCode, Header[] headers, JSONArray jsonObject) {
+                    ObjectMapper mapper = new ObjectMapper();
 
+                    mapper.configure(MapperFeature.ACCEPT_CASE_INSENSITIVE_PROPERTIES, true);
+                    try {
+                        Item[] response = mapper.readValue(jsonObject.toString(), Item[].class);
+                        String[] lines = result.split("\n");
+                        List<Item> inventory = new ArrayList<Item>();
+                        String dataToBePassed = "";
+                        for (int i = 0; i < lines.length; i++) {
+                            for (Item item : response) {
+                                if (lines[i].toLowerCase().contains(item.getName().toLowerCase())) {
+                                    Item item1 = new Item();
+                                    i+=2;
+                                    if(i<lines.length){
+                                        String[] str = lines[i].replaceAll("[^0-9]+", " ").split(" ");
+                                        if (str.length > 0 && str[0] != null && !str[0].isEmpty()) {
+                                            String q = str[0];
+                                            dataToBePassed += item1.getName() +  "," + item1.getQuantity() +
+                                                    "," + item1.getPrice() + "!##!";
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        Toast.makeText(getApplicationContext(), "Please check your new inventory and click on Submit!", Toast.LENGTH_LONG).show();
+                        billData = dataToBePassed;
+                        //Force a change for refresh
+                        TabLayout.Tab tab = tabLayout.getTabAt(0);
+                        tab.select();
+                        tab = tabLayout.getTabAt(1);
+                        tab.select();
+                    } catch (Exception ex) {
+                        String x = ex.toString();
+                    }
+                }
+            });
+
+
+        }
 
         private String convertResponseToString(BatchAnnotateImagesResponse response) {
             String message = "I found these things:\n\n";
