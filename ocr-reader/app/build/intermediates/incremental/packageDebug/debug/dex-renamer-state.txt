@@ -1,4 +1,0 @@
-#Mon Mar 26 16:45:11 EDT 2018
-base.0=/Users/apatial/Desktop/android-vision/visionSamples/ocr-codelab/ocr-reader-start/app/build/intermediates/transforms/dexMerger/debug/56
-path.0=classes.dex
-renamed.0=classes.dex

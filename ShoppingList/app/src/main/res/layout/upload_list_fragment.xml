@@ -6,7 +6,6 @@
     android:layout_height="match_parent">
 
 
-
     <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
@@ -946,14 +945,21 @@
         android:id="@+id/uploadItems"
         android:layout_width="match_parent"
         android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_below="@+id/fab"
-        android:layout_marginTop="-96dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
         android:editable="false"
-
         android:elevation="13dp"
         android:fadingEdge="horizontal|vertical"
         android:fontFamily="sans-serif-condensed"
+
         android:padding="10dp"
         android:paddingBottom="10dp"
         android:paddingEnd="10dp"
@@ -966,6 +972,14 @@
         android:textStyle="italic" />
 
 
+    <Button
+        android:id="@+id/open_ocr_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:text="OCR" />
 
     <ProgressBar
         android:id="@+id/upload_progressBar"
@@ -975,15 +989,5 @@
         android:layout_centerInParent="true"
         android:foregroundGravity="center_horizontal"
         android:visibility="invisible" />
-
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_gravity="bottom|end"
-        android:layout_marginBottom="96dp"
-        app:srcCompat="@android:drawable/ic_menu_camera" />
 
 </RelativeLayout>

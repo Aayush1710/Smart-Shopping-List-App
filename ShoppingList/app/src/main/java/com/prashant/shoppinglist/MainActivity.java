@@ -90,12 +90,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ProgressBar uploadProgressBar=(ProgressBar)findViewById(R.id.sign_in_progress);
         uploadProgressBar.setVisibility(View.INVISIBLE);
     }
+
+
+
     public void requestLogin(EditText username,EditText password)
     {
 
         //manage this stuff
+
         final String user=username.getText().toString();
         final String psw=password.getText().toString();
+
 
         //connecting in backgroud thread
 
@@ -120,9 +125,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 disableProgressBar();
                 if(response.equals("Allow login"))
                 {
-                    Intent survey=new Intent(getApplicationContext(),SurveyActivity.class);
-                    survey.putExtra("emailId",user);
-                    startActivity(survey);
+                    Intent dashboard=new Intent(getApplicationContext(),DashboardActivity.class);
+                    dashboard.putExtra("emailId",user);
+                    startActivity(dashboard);
                 }
 
             }
@@ -155,12 +160,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         queue.add(req);
 
 
-
-
-
-
     }
-
-
 
 }

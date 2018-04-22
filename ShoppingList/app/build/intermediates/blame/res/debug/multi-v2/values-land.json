@@ -4,7 +4,7 @@
             "outputFile": "/Users/apatial/Desktop/Smart-Shopping-List-App/ShoppingList/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/Users/apatial/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/73129a6a2bd2fb63e05e843d2ac3542c/res/values-land/values-land.xml",
+                    "source": "/Users/apatial/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/972b4befa4c2d69bdcecb357117837db/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/Users/apatial/.gradle/caches/transforms-1/files-1.1/design-25.3.1.aar/2cd1f3d99dde4fd8136bf3a997dc3e3f/res/values-land/values-land.xml",
+                    "source": "/Users/apatial/.gradle/caches/transforms-1/files-1.1/design-27.0.2.aar/4866ef95b9dca164a4fd69b5635b1ef9/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

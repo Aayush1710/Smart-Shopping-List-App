@@ -4,7 +4,26 @@
             "outputFile": "/Users/apatial/Desktop/Smart-Shopping-List-App/ShoppingList/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/Users/apatial/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/73129a6a2bd2fb63e05e843d2ac3542c/res/values-v16/values-v16.xml",
+                    "source": "/Users/apatial/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/972b4befa4c2d69bdcecb357117837db/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "5",
+                        "endColumns": "12",
+                        "endOffsets": "223"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "121",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "/Users/apatial/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/a0386e82aa18887cea6f28ab7c0bd11d/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

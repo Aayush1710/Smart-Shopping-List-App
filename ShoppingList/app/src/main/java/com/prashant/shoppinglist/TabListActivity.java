@@ -79,7 +79,6 @@ public class TabListActivity extends AppCompatActivity {
     private ViewPager mViewPager;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
