@@ -1,8 +1,10 @@
 package com.prashant.shoppinglist;
 
+
 import android.app.DatePickerDialog;
-import android.icu.util.Calendar;
+import android.app.Notification;
 import android.os.Bundle;
+import android.os.SystemClock;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,6 +17,7 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
+import com.prashant.shoppinglist.NotifyBroadcast;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -32,9 +35,17 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import android.app.AlarmManager;
+import android.content.Context;
+import android.app.PendingIntent;
+import android.content.Intent;
+import java.util.Calendar;
+import android.app.NotificationManager;
+
+import static android.content.Context.ALARM_SERVICE;
 
 /**
- * Created by Prashant on 2/12/2018.
+ * Edited by Shivani
  */
 
 public class SmartListTab extends Fragment {
@@ -142,6 +153,7 @@ public class SmartListTab extends Fragment {
                 setItems(response,v);
                 disableListProgressBar(v);
 
+
             }
         }, new Response.ErrorListener() {
             @Override
@@ -167,12 +179,62 @@ public class SmartListTab extends Fragment {
         RequestQueue queue= Volley.newRequestQueue(getContext());
         queue.add(req);
 
+    }
+
+    public void setDefaultTabWithGetList(Context context, Intent intent)
+    {  // enableListProgressBar(v);
+        //get ietms from from server
+        Bundle b=getActivity().getIntent().getExtras();
+        String user=b.getString("emailId");
+        //String user="a";
+        String arr[]=new StringBuilder(shopping_date.getText()).toString().split("/");
+        SimpleDateFormat sdf=new SimpleDateFormat("YYYYMMdd");
+        Calendar cal=Calendar.getInstance();
+
+        cal.set(Integer.parseInt(arr[2]),Integer.parseInt(arr[0])-1,Integer.parseInt(arr[1]));
+        //Toast.makeText(getContext(),arr[2],Toast.LENGTH_LONG).show();
+        String parsedDate=sdf.format(cal.getTime());
+        //String parsedDate="20180312";
 
 
+        final Context context1=context;
+        final Intent intent1=intent;
+        final String url="http://"+Server.serverAddress+"/Shopping/getList?emailId="+user+"date="+parsedDate;
+        //Toast.makeText(getContext(),parsedDate,Toast.LENGTH_LONG).show();
+
+        StringRequest req=new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
+
+            @Override
+            public void onResponse(String response) {
+                //Toast.makeText(getApplicationContext(),response,Toast.LENGTH_LONG).show();
+
+                getItemList(response,context1,intent1);
 
 
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+                //disableListProgressBar(v);
+                Toast.makeText(getContext(),"Please try again",Toast.LENGTH_LONG).show();
+
+                error.printStackTrace();
+
+            }
+        }){
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String,String> params=new HashMap<>();
 
 
+                return params;
+
+            }
+        };
+        //check response
+
+        RequestQueue queue= Volley.newRequestQueue(getContext());
+        queue.add(req);
 
 
     }
@@ -203,6 +265,27 @@ public class SmartListTab extends Fragment {
 
     }
 
+    public void getItemList(String response,Context context,Intent intent){
+        Gson json=new Gson();
+        String msg="";
+        NotifyBroadcast nb=new NotifyBroadcast();
+        Type type= new TypeToken<List<String>>(){}.getType();
+        ArrayList<String> data=new ArrayList<String>();
+        data=json.fromJson(response,type);
+        //Toast.makeText(getApplicationContext(),data.toString(),Toast.LENGTH_LONG).show();
+
+        String items[]=new String[data.size()];
+        if (items.length!=0){
+            for(String s:items){
+                msg+=s;
+            nb.sendNotification(context,intent,msg);
+            }
+
+
+
+        }
+
+    }
 
 
 

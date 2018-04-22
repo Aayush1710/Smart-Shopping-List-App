@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/apatial/Desktop/ShoppingList/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v12/values-v12.xml",
+            "outputFile": "C:\\Smart-Shopping-List-App\\ShoppingList\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values-v12\\values-v12.xml",
             "map": [
                 {
-                    "source": "/Users/apatial/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.3.1.aar/75aaffe3764b623db413136fbc06c43f/res/values-v12/values-v12.xml",
+                    "source": "C:\\Users\\Admin\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-25.3.1.aar\\36a7240dc51e0dc12cf3ed5f48976e17\\res\\values-v12\\values-v12.xml",
                     "from": {
                         "startLines": "2,5,8,9",
                         "startColumns": "4,4,4,4",

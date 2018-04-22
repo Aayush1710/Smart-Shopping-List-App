@@ -723,6 +723,7 @@ int drawable notification_template_icon_bg 0x7f07006a
 int drawable notification_template_icon_low_bg 0x7f07006b
 int drawable notification_tile_bg 0x7f07006c
 int drawable notify_panel_notification_icon_bg 0x7f07006d
+int drawable vegetarian_food 0x7f07006e
 int id Items 0x7f080000
 int id action0 0x7f080001
 int id action_bar 0x7f080002
