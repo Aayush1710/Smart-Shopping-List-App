@@ -277,7 +277,7 @@ public class SmartListTab extends Fragment {
         String items[]=new String[data.size()];
         if (items.length!=0){
             for(String s:items){
-                msg+=s;
+                msg+=s+",";
             nb.sendNotification(context,intent,msg);
             }
 
