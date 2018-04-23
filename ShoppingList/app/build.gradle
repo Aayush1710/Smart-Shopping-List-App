@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "26.0.2"
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
     defaultConfig {
         applicationId "com.prashant.shoppinglist"
-        minSdkVersion 16
-        targetSdkVersion 25
+        minSdkVersion 24
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -17,6 +17,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
@@ -26,12 +30,26 @@ dependencies {
     })
 
 
-
-    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.android.support:appcompat-v7:27.0.2'
     compile 'com.android.support.constraint:constraint-layout:1.0.2'
-    compile 'com.android.support:design:25.3.1'
-    compile 'com.android.support:support-v4:25.3.1'
+    compile 'com.android.support:support-v4:27.0.2'
     compile 'com.android.volley:volley:1.0.0'
     compile 'com.google.code.gson:gson:2.8.2'
     testCompile 'junit:junit:4.12'
+
+    compile 'com.google.android.gms:play-services-auth:11.8.0'
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    compile(
+            [group: 'com.fasterxml.jackson.core', name: 'jackson-core', version: '2.9.0'],
+            [group: 'com.fasterxml.jackson.core', name: 'jackson-annotations', version: '2.9.0'],
+            [group: 'com.fasterxml.jackson.core', name: 'jackson-databind', version: '2.9.0']
+    )
+
+    compile 'com.android.support:design:27.0.2'
+    compile 'com.google.api-client:google-api-client-android:1.23.0' exclude module: 'httpclient'
+    compile 'com.google.http-client:google-http-client-gson:1.23.0' exclude module: 'httpclient'
+    compile 'com.google.apis:google-api-services-vision:v1-rev369-1.23.0'
+
+    compile 'com.android.support:design:27.0.2'
+    compile 'com.google.android.gms:play-services-vision:9.0.0+'
 }

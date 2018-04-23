@@ -11,4 +11,21 @@ public class Item {
     float quantity;
     float price;
     Date date;
+
+    public String getName ()
+    {
+        return name;
+    }
+
+    public float getQuantity ()
+    {
+        return quantity;
+    }
+
+    public float getPrice ()
+    {
+        return price;
+    }
+
+
 }

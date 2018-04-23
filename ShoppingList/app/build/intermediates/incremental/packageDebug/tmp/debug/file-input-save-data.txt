@@ -1,0 +1,11 @@
+#Internal package file, do not edit.
+#Thu Apr 19 21:05:35 EDT 2018
+1.base=/Users/apatial/Desktop/Smart-Shopping-List-App/ShoppingList/app/build/intermediates/transforms/dexMerger/debug/0
+0.baseType=DIRECTORY
+1.baseType=DIRECTORY
+count=2
+1.set=DEX
+0.path=classes.dex
+0.set=DEX
+0.base=/Users/apatial/Desktop/Smart-Shopping-List-App/ShoppingList/app/build/intermediates/transforms/dexMerger/debug/0
+1.path=classes2.dex

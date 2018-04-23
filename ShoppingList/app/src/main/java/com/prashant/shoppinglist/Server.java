@@ -5,5 +5,5 @@ package com.prashant.shoppinglist;
  */
 
 public class Server {
-    final static public String serverAddress="192.168.0.6:3000";
+    final static public String serverAddress="10.154.10.142:3000";
 }

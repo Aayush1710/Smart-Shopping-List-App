@@ -1,13 +1,22 @@
 package com.prashant.shoppinglist;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
+import android.graphics.Bitmap;
 import android.icu.util.Calendar;
+import android.net.Uri;
+import android.os.AsyncTask;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,13 +30,38 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.fasterxml.jackson.databind.MapperFeature;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.api.client.extensions.android.http.AndroidHttp;
+import com.google.api.client.googleapis.json.GoogleJsonResponseException;
+import com.google.api.client.http.HttpTransport;
+import com.google.api.client.json.JsonFactory;
+import com.google.api.client.json.gson.GsonFactory;
+import com.google.api.services.vision.v1.Vision;
+import com.google.api.services.vision.v1.VisionRequest;
+import com.google.api.services.vision.v1.VisionRequestInitializer;
+import com.google.api.services.vision.v1.model.AnnotateImageRequest;
+import com.google.api.services.vision.v1.model.BatchAnnotateImagesRequest;
+import com.google.api.services.vision.v1.model.BatchAnnotateImagesResponse;
+import com.google.api.services.vision.v1.model.EntityAnnotation;
+import com.google.api.services.vision.v1.model.Feature;
+import com.google.api.services.vision.v1.model.Image;
 import com.google.gson.Gson;
+import com.loopj.android.http.JsonHttpResponseHandler;
 
+import org.json.JSONArray;
+
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.List;
+import java.util.Locale;
 import java.util.Map;
+
+import cz.msebera.android.httpclient.Header;
 
 /**
  * Created by Prashant on 2/12/2018.
@@ -42,12 +76,31 @@ public class UploadTab extends Fragment {
     EditText item6,quantity6,price6,date6;
 
     private DatePickerDialog.OnDateSetListener mDateListener1,mDateListener2,mDateListener3,mDateListener4,mDateListener5,mDateListener6;
+
+
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
 
         //getting the first part
         final View rootView = inflater.inflate(R.layout.upload_list_fragment, container, false);
         Button b=(Button) rootView.findViewById(R.id.uploadItems);
+
+
+        Button ocrBtn = (Button) rootView.findViewById(R.id.open_ocr_button2);
+
+        ocrBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i=new Intent(getActivity(),OCRActivity.class);
+                startActivity(i);
+
+            }
+        });
+
+
+
+
 
 
         //getting data for item 1
@@ -275,16 +328,37 @@ public class UploadTab extends Fragment {
         ProgressBar uploadProgressBar=(ProgressBar)v.findViewById(R.id.upload_progressBar);
         uploadProgressBar.setVisibility(View.INVISIBLE);
     }
+
+
+
+//    public void callingOCR (LayoutInflater inflater, ViewGroup container ,Bundle savedInstanceState, int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults, int resultCode, Intent data,Uri uri,Bitmap bitmap, int maxDimension,Menu menu,MenuItem item) {
+//
+//        OCR ocr_obj=new OCR();
+//        ocr_obj.onCreate(savedInstanceState);
+//        ocr_obj.startGalleryChooser();
+//        ocr_obj.startCamera();
+//        ocr_obj.getCameraFile();
+//        ocr_obj.onRequestPermissionsResult(requestCode, permissions, grantResults);
+//        ocr_obj.onActivityResult(requestCode, resultCode, data);
+//        ocr_obj.uploadImage(uri);
+//        ocr_obj.scaleBitmapDown(bitmap,maxDimension);
+//        ocr_obj.onCreateOptionsMenu(menu);
+//        ocr_obj.onOptionsItemSelected(item);
+//        OCR.PlaceholderFragment phf = new OCR.PlaceholderFragment();
+//        phf.onCreateView(inflater, container,savedInstanceState);
+//
+//    }
+
     public void uploadItems(final View v, final String parsedDate)
     {
-
-
-
-
-
         Bundle b=getActivity().getIntent().getExtras();
         final ArrayList<String> list=new ArrayList<String>();
 
+        ///Remove and call OCR
+
+
+
+        //add values to list
 
         if(item1.getText()!=null && item1.getText().length()>0)
             list.add(item1.getText().toString());
@@ -359,7 +433,7 @@ public class UploadTab extends Fragment {
                 }
             }){
                 @Override
-                protected Map<String, String> getParams() throws AuthFailureError {
+                protected Map<String, String> getParams() {
                     Map<String,String> params=new HashMap<>();
                     Bundle b=getActivity().getIntent().getExtras();
 

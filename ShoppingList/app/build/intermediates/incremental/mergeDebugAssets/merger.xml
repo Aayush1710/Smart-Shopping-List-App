@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Users/apatial/Desktop/ShoppingList/app/src/main/assets"/><source path="/Users/apatial/Desktop/ShoppingList/app/build/generated/assets/shaders/debug"/></dataSet><dataSet config="debug"><source path="/Users/apatial/Desktop/ShoppingList/app/src/debug/assets"/></dataSet></merger>
+<merger version="3"><dataSet config="main"><source path="/Users/apatial/Desktop/Smart-Shopping-List-App/ShoppingList/app/src/main/assets"/><source path="/Users/apatial/Desktop/Smart-Shopping-List-App/ShoppingList/app/build/generated/assets/shaders/debug"/></dataSet><dataSet config="debug"><source path="/Users/apatial/Desktop/Smart-Shopping-List-App/ShoppingList/app/src/debug/assets"/></dataSet></merger>
