@@ -166,8 +166,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-<<<<<<< HEAD
-=======
     private void scheduleNotification(Notification notification) {
 
         Intent intent = new Intent(this, NotifyBroadcast.class);
@@ -190,5 +188,4 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         return builder.build();
     }
 
->>>>>>> master
 }
