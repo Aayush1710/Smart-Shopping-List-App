@@ -7,6 +7,7 @@ We often buy groceries and stuff from grocery markets. Sometimes we make a list 
 ### Instructions 
 #### Prerequisites:
 To run the server side code, you need to have Nodejs and MongoDB installed on your system.
+Also your own google cloud api token/key.
 #### Installing NodeJs
 1)	Download Nodejs from https://nodejs.org/en/
 2)	Open a downloaded file and run it.
