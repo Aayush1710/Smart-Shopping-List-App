@@ -46,7 +46,7 @@ and install android studio.
 -	Once server address is changed, install application on your mobile and use it.
 
 #### Flow of Application:
-![alt text](https://github.com/abhinandan27/SEgroupH/blob/master/Android.jpg)
+![alt text](https://github.com/Aayush1710/Smart-Shopping-List-App/blob/master/Flow%20chart.jpg)
 -	User is asked to login. If he does not have an account, then he can sign up.
 -	After signing in, user gets a survey page where he needs to fill the information about holidays, workload and number of people etc.
 -	After this, user can upload items on the server or he can see a list of predicted items.
