@@ -30,7 +30,7 @@ For more information about mongo shell, refer the following link.
 https://docs.mongodb.com/manual/reference/mongo-shell/
 
 #### Running the server
-Once you are done with NodeJs and MongoDB installation, download a our code repository from https://github.com/abhinandan27/SEgroupH
+Once you are done with NodeJs and MongoDB installation, download a our code repository from https://github.com/Aayush1710/Smart-Shopping-List-App
 -	Go to myApp and open command prompt in the same directory.
 -	There are several dependencies like Express.js and brain.js which we need to install before we run our server. All those dependencies are mentioned in package.json file in myApp directory. To install those dependencies, run a command: npm init
 -	Run command: npm start
